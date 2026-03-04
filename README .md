@@ -1,4 +1,4 @@
-# LightVectorNet: Knowledge Distillation for Vehicle Trajectory Prediction
+<h1 align="center"><font color="red">LightVectorNet: Knowledge Distillation for Vehicle Trajectory Prediction</font></h1>
 
 This repository contains the official implementation for the project: **"Design and Mechanism Analysis of Lightweight Vehicle Trajectory Prediction Model Based on Knowledge Distillation"**.
 
@@ -11,8 +11,8 @@ Based on the baseline implementation [yet-another-vectornet](https://github.com/
 Evaluated on the Argoverse Validation Set (100% data):
 
 | Model (模型) | minADE (m) | minFDE (m) |
-| :---         | :---       | :---        |
-| Teacher (HGNN) | 16.79    | 32.04 |
+| :--- | :--- | :--- |
+| Teacher (HGNN) | 16.79 | 32.04 |
 | **Student (LightVectorNet)** | **15.60** | **29.99** |
 
 ## 🛠️ Data & Pre-trained Models Preparation (数据与权重准备)
@@ -42,11 +42,13 @@ python train_student.py
 Evaluate the models on the Validation/Test Set to get ADE and FDE metrics:
 ```bash
 python evaluate.py
+```
 
 ### 3. Visualization (定性可视化)
 Visualize and compare the trajectories of the Teacher, Student, and Ground Truth:
 ```bash
 python visualize.py
+```
 
-##🙏 Acknowledgements (致谢)
-The baseline backbone, data processing pipeline, and original pre-trained model of this project are built upon the excellent work of [xkhuang/yet-another-vectornet](https://github.com/xk-huang/yet-another-vectornet). We extend their architecture to a lightweight distillation framework for efficient edge deployment.
+## 🙏 Acknowledgements (致谢)
+The baseline backbone, data processing pipeline, and original pre-trained model of this project are built upon the excellent work of [xkhuang/yet-another-vectornet](https://github.com/xkhuang/yet-another-vectornet). We extend their architecture to a lightweight distillation framework for efficient edge deployment.
