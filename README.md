@@ -20,13 +20,13 @@ To fully reproduce this project, you need both the original dataset and the pre-
 
 ### 1. Dataset (数据集)
 Please download the pre-processed Argoverse dataset provided by the original author and extract it into the `./interm_data/` directory.
-* **Dataset Download Link**: [Google Drive](https://drive.google.com/drive/folders/1w7P9dK0lUoK7B0x7-jXo6gS5qgI2H_hH?usp=sharing)
+* **Dataset Download Link**: [Google Drive](https://drive.google.com/drive/folders/1XJ2Oz4Qc2UstnfRw3DNvQThuEVvM6tUL?usp=sharing)
 
 *(Note: If you encounter a PyG `RuntimeError` regarding version mismatch during evaluation, simply delete the `processed` folder inside the test/val/train directory to force a PyG cache rebuild.)*
 
 ### 2. Teacher Model Weights (名师模型权重 - HGNN)
 To run the distillation process or visualize the Teacher's predictions, download the pre-trained Teacher model provided by the original author and place it in the `./pretrained_teacher/` directory.
-* **Teacher Weights Download**: [Google Drive](https://drive.google.com/drive/folders/1zH1tZJ-D3-q-cM0fJ4I_G91E_l0Eey1A?usp=sharing)
+* **Teacher Weights Download**: [Google Drive](https://drive.google.com/drive/folders/1XJ2Oz4Qc2UstnfRw3DNvQThuEVvM6tUL?usp=sharing)
 
 ### 3. Student Model Weights (高徒模型权重 - LightVectorNet)
 The lightweight student model trained via our hybrid knowledge distillation strategy achieved a minADE of 15.60m. 
