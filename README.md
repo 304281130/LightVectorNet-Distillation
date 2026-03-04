@@ -5,7 +5,7 @@ This repository contains the official implementation for the project: **"Design 
 ## 📖 Introduction (简介)
 Trajectory prediction is crucial for autonomous driving. However, state-of-the-art Graph Neural Networks (GNNs) are often too computationally expensive for real-time edge deployment (e.g., Jetson Nano). 
 
-Based on the baseline implementation [yet-another-vectornet](https://github.com/xkhuang/yet-another-vectornet), we propose **LightVectorNet**, a lightweight prediction model trained via **Knowledge Distillation**. By using a complex HGNN as the Teacher and a lightweight MLP as the Student, and applying a hybrid loss function ($\alpha=0.5$), we achieved higher accuracy with significantly fewer parameters.
+Based on the baseline implementation [yet-another-vectornet](https://github.com/xk-huang/yet-another-vectornet), we propose **LightVectorNet**, a lightweight prediction model trained via **Knowledge Distillation**. By using a complex HGNN as the Teacher and a lightweight MLP as the Student, and applying a hybrid loss function ($\alpha=0.5$), we achieved higher accuracy with significantly fewer parameters.
 
 ## 📊 Performance (性能对比)
 Evaluated on the Argoverse Validation Set (100% data):
@@ -51,4 +51,4 @@ python visualize.py
 ```
 
 ## 🙏 Acknowledgements (致谢)
-The baseline backbone, data processing pipeline, and original pre-trained model of this project are built upon the excellent work of [xkhuang/yet-another-vectornet](https://github.com/xkhuang/yet-another-vectornet). We extend their architecture to a lightweight distillation framework for efficient edge deployment.
+The baseline backbone, data processing pipeline, and original pre-trained model of this project are built upon the excellent work of [xkhuang/yet-another-vectornet](https://github.com/xk-huang/yet-another-vectornet). We extend their architecture to a lightweight distillation framework for efficient edge deployment.
